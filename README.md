@@ -17,9 +17,10 @@ Competition link: https://www.kaggle.com/competitions/probabilistic-forecasting-
 11. Remove date_int. This might not be relevant as trend, seasonality is being passed. Best so far (1.6730). We are still not capturing the month right.
 12. Pass the day of the month as an input to the feature. (1.6274) New best!!!
 13. Use MSTL to get monthly seasonality from the residual of the current multi seasonal decomposition function. - 5.9250, this obviously doesnt work!
-14. TODO: Try feature removal.
-15. TODO: Conformal predictions.
-16. TODO: Correct data issues identified.
+14. Feature removal on top of v12. All features open for removal except for 'day of the year'. New best (1.5921)
+15. Create output based on latest data. We should have two sets of outputs so that the public leaderboard is not given the fitted data.
+16. TODO: Conformal predictions.
+17. TODO: Correct data issues identified.
 
 #### Didn't work
 1. Use MSTL to get monthly seasonality 
